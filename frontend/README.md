@@ -1,11 +1,4 @@
-# Firmware Repository
 
-## Build Setup
+### `yarn install`
 
-```bash
-# instala as dependencias
-yarn install
-
-# Inicializa o frontend
-yarn start
-```
+### `yarn start`

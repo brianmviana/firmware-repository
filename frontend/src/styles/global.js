@@ -1,7 +1,9 @@
 import {createGlobalStyle} from "styled-components";
-import "react-circular-progressbar/dist/styles.css"
+import "react-toastify/dist/ReactToastify.css";
 
 export default createGlobalStyle`
+    @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
     * {
         margin : 0;
         padding : 0;
@@ -9,17 +11,31 @@ export default createGlobalStyle`
         box-sizing : border-box;
     }
 
-    body {
-        font-family : Arial, Helvetica, sans-serif;
-        font-size : 14px;
-        background : #181A1B;
-        text-rendering : optimizeLegibility;
-        -webkit-font-smoothing : antialiased;
+    *:focus {
+        outline : 0;
     }
 
     html, body, #root {
         height : 100%;
     }
 
+    body {
+        -webkit-font-smoothing : antialiased;
+    }
 
+    body, input, button {
+        font : 14px "Roboto", sans-serif;
+    }
+
+    a {
+        text-decoration : none;
+    }
+
+    ul {
+        list-style : none;
+    }
+
+    button {
+        cursor: pointer;
+    }
 `;
